@@ -1,13 +1,17 @@
-import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
-import { Header } from '@/components'
+import { PageTemplate } from "@/components";
+import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Header />
-    </div>
-  )
-}
+    <>
+      <PageTemplate>
+        <h1>Encontre opções em Delivery próximos à você.</h1>
+        <h2>
+          Descubra seu novo Delivery favorito. Milhares de opções a um clique.
+        </h2>
+      </PageTemplate>
+    </>
+  );
+};
 
-export default Home
+export default Home;
