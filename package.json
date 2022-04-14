@@ -10,6 +10,7 @@
     "auto-create": "plop"
   },
   "dependencies": {
+    "@headlessui/react": "^1.5.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0"
