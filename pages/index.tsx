@@ -1,4 +1,4 @@
-import { PageTemplate } from "@/components";
+import { Dishe, PageTemplate } from "@/components";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -9,6 +9,7 @@ const Home: NextPage = () => {
         <h2>
           Descubra seu novo Delivery favorito. Milhares de opções a um clique.
         </h2>
+        <Dishe />
       </PageTemplate>
     </>
   );
