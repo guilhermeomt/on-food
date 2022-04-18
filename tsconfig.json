@@ -18,6 +18,7 @@
     "paths": {
       "@/components": ["components"],
       "@/icons": ["icons"],
+      "@/services": ["core/services"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
