@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { DisheList, PageTemplate } from "@/components";
+import { DishList, PageTemplate } from "@/components";
 import Styles from "../../styles/discovery.module.css";
 
 export default function Descobrir() {
@@ -12,7 +12,7 @@ export default function Descobrir() {
         <h1>Opções na região de {city}</h1>
         <p>Encontramos x opções</p>
         <div className={Styles.items}>
-          <DisheList />
+          <DishList />
         </div>
       </div>
     </PageTemplate>
