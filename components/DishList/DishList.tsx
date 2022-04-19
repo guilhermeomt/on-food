@@ -3,10 +3,13 @@ import { Dish, DishSkeleton } from "@/components";
 import { api } from "@/services";
 import { DishType } from "@/types";
 import Styles from "./DishList.module.css";
+import { DishListProps } from "./types";
 
-export function DishList() {
+export function DishList(props: DishListProps) {
   const fetchDishes = async () => {
-    const response = await api.get<DishType[]>("/deliveries?city=sao-paulo-sp");
+    const response = await api.get<DishType[]>(
+      `/deliveries?city=${props.citySlug}`
+    );
     return response.data;
   };
 
